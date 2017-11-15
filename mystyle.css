@@ -1,7 +1,38 @@
 body {
     margin: 0;
     padding: 0;
-    
+
+}
+
+
+
+/* nav sektionen */
+#header {
+    background-color: blanchedalmond;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+
+}
+
+#login {
+    display: block;
+    margin-right: 2%;
 
 
 }
+
+
+#main h2  {
+    text-align: center;
+
+
+}
+
+#main p {
+    text-align: center;
+
+}
+
+/* slutar här */
