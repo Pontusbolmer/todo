@@ -3,6 +3,7 @@
 
         <head>
             <title>Todo</title>
+            <meta charset="utf-8">
             <link rel="stylesheet" type="text/css" href="mystyle.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             
@@ -11,25 +12,33 @@
         <body>
             <div id="header">
                 <div id="logo">
-                    <h1>Todo</h1>
-                </div id="login">
-                    <label>Användarnamn
-                        <input class ="user" type="text"></label>
+                    <h1><a href="index.html">Todo</a></h1>
+                   
+                </div>
+                <div id="login">
+                    <form>
+                        <label>Användarnamn
+                            <input class = "user" type="text"></label>
                         
-                    <label>Lösenord
+                        <label>Lösenord
                         <input class ="pass" type="text"></label>
                         
-                        <button onclick="login()" class="login">Logga in</button>
-                        
-                
+                        <button class="login">Logga in</button>  
+                    </form>      
                 <div>
-                
-                
+                        <div style="clear:both;"></div> 
+               
             </div>
 
             <div id="main">
                 <h2>Hej och välkommen</h2>
                 <p>Detta är en Todo sida, logga in för att se listan</p>
+
+
+            </div>
+
+            <div id="footer">
+            
 
 
             </div>

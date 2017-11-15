@@ -1,13 +1,16 @@
 $(document).ready(function() {
-    sessionStorage.userName = "test";
+    sessionStorage.user = "test";
     sessionStorage.pass = "password"
 
   
     
     $("#login").click(function()
     {
-        $(".userName").text(sessionStorage.userName);
-        $(".pass").text(sessionStorage.pass);
+        if (user === "test" && pass === "password") {
+            alert("välkommen in")
+        } else {
+            alert("Skriv in rätt lösenord");
+        }
     });    
     
     
