@@ -39,20 +39,19 @@ form {
 
 /* slutar här */
 
-
 /* main innehåll börjar här */
 
-#main h2  {
-    text-align: center;
-
-
+#main {
+    padding-top: 100px;
 }
 
-#main p {
+#main h2, #main p, #main ul {
     text-align: center;
-
 }
 
+#main ul {
+    list-style-type: none;
+}
 
 
 /* Main innehåll slutr här*/
@@ -68,12 +67,13 @@ form {
     display: flex;
     justify-content: space-between;
     background-color: blanchedalmond;
-    
-    
-
-
 }
 
+
+.info {
+margin: 0 auto;
+
+}
 
 /* footer sluter här */
 
