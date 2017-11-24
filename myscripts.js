@@ -30,6 +30,8 @@ $(document).ready(function() {  // Här startar jquery funktionen
 });
 
 
+
+
 /* Här börjar min funktion som avgör vilken vy som visas på sidan */
 
 function updateView() {                 
@@ -41,6 +43,7 @@ function updateView() {
         $('#logged-in').hide();       // Vilket då betyder att vi gömmer de andra elementen
         $('#logout').hide();
         $('#login').show();
+        $('#lists').hide();
     } else if(sessionStorage.loginSuccess == 1) {
         // Inloggad
         $('#start').hide();
@@ -49,6 +52,8 @@ function updateView() {
         $('#logged-in').show();
         $('#logout').show();
         $('#login').hide();
+        $("#lists").append("Här kommer listan: ")
+        list();
     } else {
         // Har inte ens försökt logga in
         $('#start').show();
@@ -56,7 +61,28 @@ function updateView() {
         $('#logged-in').hide();
         $('#logout').hide();
         $('#login').show();
+        $('#lists').hide();
     }
 
 }
+
+
+
+function list () {
+    
+    var lists = ["Ploga ", " Dansa", " Dricka bärs", " Slåss", " Spotta. "]
+    
+    printList = "<ul>"
+    for(var i = 0; i < lists.length; i += 1){
+      printList = printList + "<li>" + lists[i] + "</li>";  
+    }
+    printList = printList + "</ul>"
+
+    console.log (printList)
+
+    //return printList
+    $("#lists").append(printList)
+
+}
+
 
